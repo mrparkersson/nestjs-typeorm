@@ -6,9 +6,6 @@ import { ConfigModule } from '@nestjs/config';
 
 @Module({
   imports: [
-    ConfigModule.forRoot({
-      envFilePath: [`.env.stage.${process.env.STAGE}`],
-    }),
     TasksModule,
     TypeOrmModule.forRoot({
       type: 'postgres',

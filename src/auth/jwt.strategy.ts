@@ -7,6 +7,7 @@ import { JwtPayload } from './jwt-interface-payload';
 import { User } from './user.entity';
 import { UsersRepository } from './users.repository';
 
+//jason web token
 @Injectable()
 export class JwtStrategy extends PassportStrategy(Strategy) {
   constructor(
